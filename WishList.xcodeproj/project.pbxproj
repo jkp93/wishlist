@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		713AAF7D2BCE7B5400BF7E69 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AAF7C2BCE7B5400BF7E69 /* WishListViewController.swift */; };
 		719B01D62BC919470013150B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B01D52BC919470013150B /* AppDelegate.swift */; };
 		719B01D82BC919470013150B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B01D72BC919470013150B /* SceneDelegate.swift */; };
 		719B01DA2BC919470013150B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B01D92BC919470013150B /* ViewController.swift */; };
 		719B01DD2BC919470013150B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 719B01DC2BC919470013150B /* Base */; };
 		719B01DF2BC919490013150B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719B01DE2BC919490013150B /* Assets.xcassets */; };
 		719B01E22BC919490013150B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 719B01E12BC919490013150B /* Base */; };
-		719B01EA2BC9195A0013150B /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B01E92BC9195A0013150B /* JSON.swift */; };
+		719B01EA2BC9195A0013150B /* RemoteProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B01E92BC9195A0013150B /* RemoteProduct.swift */; };
 		719B01ED2BC932550013150B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 719B01EB2BC932550013150B /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		713AAF7C2BCE7B5400BF7E69 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		719B01D22BC919470013150B /* WishList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719B01D52BC919470013150B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719B01D72BC919470013150B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +28,7 @@
 		719B01DE2BC919490013150B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		719B01E12BC919490013150B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		719B01E32BC919490013150B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		719B01E92BC9195A0013150B /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		719B01E92BC9195A0013150B /* RemoteProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProduct.swift; sourceTree = "<group>"; };
 		719B01EC2BC932550013150B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +65,8 @@
 				719B01D52BC919470013150B /* AppDelegate.swift */,
 				719B01D72BC919470013150B /* SceneDelegate.swift */,
 				719B01D92BC919470013150B /* ViewController.swift */,
-				719B01E92BC9195A0013150B /* JSON.swift */,
+				713AAF7C2BCE7B5400BF7E69 /* WishListViewController.swift */,
+				719B01E92BC9195A0013150B /* RemoteProduct.swift */,
 				719B01EB2BC932550013150B /* Model.xcdatamodeld */,
 				719B01DB2BC919470013150B /* Main.storyboard */,
 				719B01DE2BC919490013150B /* Assets.xcassets */,
@@ -145,10 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				719B01DA2BC919470013150B /* ViewController.swift in Sources */,
+				713AAF7D2BCE7B5400BF7E69 /* WishListViewController.swift in Sources */,
 				719B01D62BC919470013150B /* AppDelegate.swift in Sources */,
 				719B01ED2BC932550013150B /* Model.xcdatamodeld in Sources */,
 				719B01D82BC919470013150B /* SceneDelegate.swift in Sources */,
-				719B01EA2BC9195A0013150B /* JSON.swift in Sources */,
+				719B01EA2BC9195A0013150B /* RemoteProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
