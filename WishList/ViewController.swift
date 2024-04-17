@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 
 class ViewController: UIViewController {
-
+    
     //코어데이터에 데이터를 담기 위해 persistentContainer 선언
     var persistentContainer: NSPersistentContainer? {
         (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
@@ -43,10 +43,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var productLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .lightGray
         fetchRemoteProduct()
+        imageViewDesign()
+        backgroundColor()
+        productLabel.text = "Product Information : "
+        tappedSaveProductButtonDesign()
+        tappedSkipButtonDesign()
+        tappedPresentWishListDesign()
     }
     
     
@@ -115,6 +123,44 @@ class ViewController: UIViewController {
 
         try? context.save()
     }
+
+//MARK: - 디자인 요소 코드
     
+    //버튼 디자인
+    @IBOutlet weak var tappedSaveProductButton: UIButton!
+    func tappedSaveProductButtonDesign() {
+        tappedSaveProductButton.layer.cornerRadius = 15
+    }
+    
+    @IBOutlet weak var tappedSkipButton: UIButton!
+    func tappedSkipButtonDesign() {
+        tappedSkipButton.layer.cornerRadius = 15
+    }
+    
+    @IBOutlet weak var tappedPresentWishList: UIButton!
+    func tappedPresentWishListDesign() {
+        tappedPresentWishList.layer.cornerRadius = 15
+    }
+    
+    //imageView 디자인
+    func imageViewDesign() {
+        imageView.layer.cornerRadius = 30
+        imageView.contentMode = .scaleAspectFit
+        imageView.layer.shadowOffset = CGSize(width: 5, height: 5)
+        imageView.layer.shadowOpacity = 0.7
+        imageView.layer.shadowRadius = 5
+        imageView.layer.shadowColor = UIColor.gray.cgColor
+//        imageView.clipsToBounds = false
+        imageView.layer.masksToBounds = true
+        imageView.layer.shadowPath = UIBezierPath(roundedRect: imageView.bounds, cornerRadius: imageView.layer.cornerRadius).cgPath
+    }
+    
+    //배경 컬러
+    func backgroundColor() {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [UIColor.white.cgColor, UIColor.lightGray.cgColor]
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
+    }
 }
 
