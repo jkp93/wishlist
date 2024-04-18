@@ -28,7 +28,8 @@ class ViewController: UIViewController {
                 self.descriptionLabel.text = currentProduct.description
                 
                 //describing?
-                self.priceLabel.text = "\(String(describing: currentProduct.price))$"
+                let priceText = currentProduct.price != nil ? "\(currentProduct.price!)$" : "N/A"
+                    self.priceLabel.text = priceText
             }
             
             DispatchQueue.global().async { [weak self] in
@@ -48,10 +49,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .lightGray
+        productLabel.text = "Product Info."
         fetchRemoteProduct()
         imageViewDesign()
         backgroundColor()
-        productLabel.text = "Product Information : "
         tappedSaveProductButtonDesign()
         tappedSkipButtonDesign()
         tappedPresentWishListDesign()
@@ -108,23 +109,23 @@ class ViewController: UIViewController {
         }
         
     }
-
+    
     // currentProduct를 가져와 Core Data에 저장합니다.
     private func saveWishProduct() {
         guard let context = self.persistentContainer?.viewContext else { return }
-
+        
         guard let currentProduct = self.currentProduct else { return }
-
+        
         let wishProduct = Product(context: context)
         
         wishProduct.id = Int64(currentProduct.id)
         wishProduct.title = currentProduct.title
         wishProduct.price = Double(currentProduct.price)
-
+        
         try? context.save()
     }
-
-//MARK: - 디자인 요소 코드
+    
+    //MARK: - 디자인 요소 코드
     
     //버튼 디자인
     @IBOutlet weak var tappedSaveProductButton: UIButton!
@@ -150,7 +151,7 @@ class ViewController: UIViewController {
         imageView.layer.shadowOpacity = 0.7
         imageView.layer.shadowRadius = 5
         imageView.layer.shadowColor = UIColor.gray.cgColor
-//        imageView.clipsToBounds = false
+        //        imageView.clipsToBounds = false
         imageView.layer.masksToBounds = true
         imageView.layer.shadowPath = UIBezierPath(roundedRect: imageView.bounds, cornerRadius: imageView.layer.cornerRadius).cgPath
     }
