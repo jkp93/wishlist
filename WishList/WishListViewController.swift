@@ -26,7 +26,54 @@ class WishListViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         setProductList()
-        wishListTitleLabel.text = "Wish List"
+        wishListTitleLabel.text = "위시 리스트"
+        
+        // 플로팅버튼 생성
+        let floatingButton = UIButton(type: .system)
+        floatingButton.setTitle("Delete All", for: .normal)
+        floatingButton.backgroundColor = .red
+        floatingButton.setTitleColor(.white, for: .normal)
+        floatingButton.layer.cornerRadius = 25
+        
+        // 음영 추가
+        floatingButton.layer.shadowColor = UIColor.black.cgColor
+        floatingButton.layer.shadowOffset = CGSize(width: 0, height: 3)
+        floatingButton.layer.shadowOpacity = 0.7
+        floatingButton.layer.shadowRadius = 4
+        
+        floatingButton.addTarget(self, action: #selector(deleteButtonTapped), for: .touchUpInside)
+        
+        // 플로팅버튼 뷰로 추가
+        view.addSubview(floatingButton)
+        
+        // 플로팅버튼 레이아웃
+        floatingButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            floatingButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            floatingButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            floatingButton.widthAnchor.constraint(equalToConstant: 100),
+            floatingButton.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    // 플로팅버튼 함수
+    @objc func deleteButtonTapped() {
+        // 데이터 불러오기
+        guard let context = persistentContainer?.viewContext else { return }
+        
+        for product in productList {
+            context.delete(product)
+        }
+        
+        do {
+            try context.save()
+            
+            // 데이터 업데이트 후 테이블뷰 재로드
+            productList.removeAll()
+            tableView.reloadData()
+        } catch {
+            print("Error saving context: \(error)")
+        }
     }
     
     // CoreData에서 상품 정보를 불러와, productList 변수에 저장합니다.
@@ -75,10 +122,10 @@ class WishListViewController: UIViewController, UITableViewDelegate, UITableView
                 }
             }
             
-            // Remove the selected product from the productList array
+            // productList array에서 선택된 아이템 삭제
             self.productList.remove(at: indexPath.row)
             
-            // Remove the corresponding row from the table view
+            // 해당 row 테이블뷰에서 삭제
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }

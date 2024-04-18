@@ -65,6 +65,7 @@ class ViewController: UIViewController {
     
     @IBAction func tappedSaveProductButton(_ sender: Any) {
         self.saveWishProduct() // 상품을 저장
+        
     }
     
     @IBAction func tappedPresentWishList(_ sender: Any) {
@@ -160,7 +161,7 @@ class ViewController: UIViewController {
     func backgroundColor() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.view.bounds
-        gradientLayer.colors = [UIColor.white.cgColor, UIColor.lightGray.cgColor]
+        gradientLayer.colors = [UIColor.white.cgColor, UIColor.systemGray3.cgColor]
         self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
 }
