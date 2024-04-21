@@ -17,11 +17,11 @@
 
 ## Demo
 <p float="left">
-<img src="https://github.com/jungkweon93/wishlist/assets/160707647/94ae49b5-1a79-4198-a47c-cd321a253c81" width="200" height="400">
-<img src="https://github.com/jungkweon93/wishlist/assets/160707647/72751838-a08d-4861-8527-a3bf581357ff" width="200" height="400">
-<img src="https://github.com/jungkweon93/wishlist/assets/160707647/769385b2-c358-4128-a057-f56c537d57f5" width="200" height="400">
-<img src="https://github.com/jungkweon93/wishlist/assets/160707647/7cb1adfb-7849-417d-b518-82e5fc14acb1" width="200" height="400">
-<img src="https://github.com/jungkweon93/wishlist/assets/160707647/146ea4f0-591c-48e0-adfc-646d3873105b" width="200" height="400">
+<img src="https://github.com/jungkweon93/wishlist/assets/160707647/94ae49b5-1a79-4198-a47c-cd321a253c81" width="200" height="500">
+<img src="https://github.com/jungkweon93/wishlist/assets/160707647/72751838-a08d-4861-8527-a3bf581357ff" width="200" height="500">
+<img src="https://github.com/jungkweon93/wishlist/assets/160707647/769385b2-c358-4128-a057-f56c537d57f5" width="200" height="500">
+<img src="https://github.com/jungkweon93/wishlist/assets/160707647/7cb1adfb-7849-417d-b518-82e5fc14acb1" width="200" height="500">
+<img src="https://github.com/jungkweon93/wishlist/assets/160707647/146ea4f0-591c-48e0-adfc-646d3873105b" width="200" height="500">
 </p>
 
 ## Features
