@@ -4,7 +4,7 @@
 3. [Features](#Features)
 4. [Requirements](#Requirements)
 5. [Stacks](#Stacks)
-6. [Project Structure](#Project Structure)
+6. [Project Structure](#Project-Structure)
 7. [Developer](#Developer)
 
 # WishList
