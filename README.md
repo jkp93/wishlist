@@ -1,5 +1,5 @@
 # Table of Contents
-1. [Description]
+1. [Description](#Description)
 2. [Demo]
 3. [Features]
 4. [Requirements]
