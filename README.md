@@ -1,11 +1,11 @@
 # Table of Contents
 1. [Description](#Description)
-2. [Demo]
-3. [Features]
-4. [Requirements]
-5. [Stacks]
-6. [Project Structure]
-7. [Developer]
+2. [Demo](#Demo)
+3. [Features](#Features)
+4. [Requirements](#Requirements)
+5. [Stacks](#Stacks)
+6. [Project Structure](#Project Structure)
+7. [Developer](#Developer)
 
 # WishList
 
