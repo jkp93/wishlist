@@ -68,10 +68,10 @@
 				713AAF7C2BCE7B5400BF7E69 /* WishListViewController.swift */,
 				719B01E92BC9195A0013150B /* RemoteProduct.swift */,
 				719B01DB2BC919470013150B /* Main.storyboard */,
+				71DC60CE2BD614F800A1EADE /* Model.xcdatamodeld */,
 				719B01DE2BC919490013150B /* Assets.xcassets */,
 				719B01E02BC919490013150B /* LaunchScreen.storyboard */,
 				719B01E32BC919490013150B /* Info.plist */,
-				71DC60CE2BD614F800A1EADE /* Model.xcdatamodeld */,
 			);
 			path = WishList;
 			sourceTree = "<group>";
