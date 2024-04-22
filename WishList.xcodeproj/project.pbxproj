@@ -62,18 +62,26 @@
 		719B01D42BC919470013150B /* WishList */ = {
 			isa = PBXGroup;
 			children = (
+				71DC60D12BD6183400A1EADE /* Model */,
 				719B01D52BC919470013150B /* AppDelegate.swift */,
 				719B01D72BC919470013150B /* SceneDelegate.swift */,
 				719B01D92BC919470013150B /* ViewController.swift */,
 				713AAF7C2BCE7B5400BF7E69 /* WishListViewController.swift */,
 				719B01E92BC9195A0013150B /* RemoteProduct.swift */,
 				719B01DB2BC919470013150B /* Main.storyboard */,
-				71DC60CE2BD614F800A1EADE /* Model.xcdatamodeld */,
 				719B01DE2BC919490013150B /* Assets.xcassets */,
 				719B01E02BC919490013150B /* LaunchScreen.storyboard */,
 				719B01E32BC919490013150B /* Info.plist */,
 			);
 			path = WishList;
+			sourceTree = "<group>";
+		};
+		71DC60D12BD6183400A1EADE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71DC60CE2BD614F800A1EADE /* Model.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,8 +389,7 @@
 				71DC60CF2BD614F800A1EADE /* Model.xcdatamodel */,
 			);
 			currentVersion = 71DC60CF2BD614F800A1EADE /* Model.xcdatamodel */;
-			name = Model.xcdatamodeld;
-			path = /Users/jkpark/Desktop/Swift/WishList/wishlist/WishList/Model.xcdatamodeld;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
