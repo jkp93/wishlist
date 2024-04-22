@@ -15,7 +15,7 @@
 		719B01DF2BC919490013150B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719B01DE2BC919490013150B /* Assets.xcassets */; };
 		719B01E22BC919490013150B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 719B01E12BC919490013150B /* Base */; };
 		719B01EA2BC9195A0013150B /* RemoteProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B01E92BC9195A0013150B /* RemoteProduct.swift */; };
-		719B01ED2BC932550013150B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 719B01EB2BC932550013150B /* Model.xcdatamodeld */; };
+		71DC60D02BD614F800A1EADE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71DC60CE2BD614F800A1EADE /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		719B01E12BC919490013150B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		719B01E32BC919490013150B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		719B01E92BC9195A0013150B /* RemoteProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProduct.swift; sourceTree = "<group>"; };
-		719B01EC2BC932550013150B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		71DC60CF2BD614F800A1EADE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +67,11 @@
 				719B01D92BC919470013150B /* ViewController.swift */,
 				713AAF7C2BCE7B5400BF7E69 /* WishListViewController.swift */,
 				719B01E92BC9195A0013150B /* RemoteProduct.swift */,
-				719B01EB2BC932550013150B /* Model.xcdatamodeld */,
 				719B01DB2BC919470013150B /* Main.storyboard */,
 				719B01DE2BC919490013150B /* Assets.xcassets */,
 				719B01E02BC919490013150B /* LaunchScreen.storyboard */,
 				719B01E32BC919490013150B /* Info.plist */,
+				71DC60CE2BD614F800A1EADE /* Model.xcdatamodeld */,
 			);
 			path = WishList;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 				719B01DA2BC919470013150B /* ViewController.swift in Sources */,
 				713AAF7D2BCE7B5400BF7E69 /* WishListViewController.swift in Sources */,
 				719B01D62BC919470013150B /* AppDelegate.swift in Sources */,
-				719B01ED2BC932550013150B /* Model.xcdatamodeld in Sources */,
+				71DC60D02BD614F800A1EADE /* Model.xcdatamodeld in Sources */,
 				719B01D82BC919470013150B /* SceneDelegate.swift in Sources */,
 				719B01EA2BC9195A0013150B /* RemoteProduct.swift in Sources */,
 			);
@@ -375,14 +375,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		719B01EB2BC932550013150B /* Model.xcdatamodeld */ = {
+		71DC60CE2BD614F800A1EADE /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				719B01EC2BC932550013150B /* Model.xcdatamodel */,
+				71DC60CF2BD614F800A1EADE /* Model.xcdatamodel */,
 			);
-			currentVersion = 719B01EC2BC932550013150B /* Model.xcdatamodel */;
+			currentVersion = 71DC60CF2BD614F800A1EADE /* Model.xcdatamodel */;
 			name = Model.xcdatamodeld;
-			path = "/Users/jkpark/Desktop/Swift/과제/WishList/WishList/Model.xcdatamodeld";
+			path = /Users/jkpark/Desktop/Swift/WishList/wishlist/WishList/Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
