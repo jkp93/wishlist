@@ -70,4 +70,4 @@ WishList
 ```
 
 ## Developer
-*  **박중권** ([jungkweon93](https://github.com/jungkweon93))
+*  **박중권** ([jkp93](https://github.com/jkp93))
